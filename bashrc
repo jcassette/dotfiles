@@ -53,7 +53,7 @@ function prompt_command
     case "$TERM" in
     xterm*|rxvt*)
         # set window title
-        echo -ne "\e]0;${HOSTNAME%%.*}"
+        echo -ne "\e]0;${HOSTNAME%%.*}\a"
         ;;
     screen*)
         # escape sequence for "shelltitle" command
